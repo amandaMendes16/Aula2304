@@ -1,7 +1,5 @@
 package application.model;
 
-import javax.swing.Spring;
-
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Entity;
@@ -14,7 +12,7 @@ public class Genero {
     @Id //Adribulto Identificador//
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private Spring nome;
+    private String nome;
 
     public long getId() {
         return id;
@@ -22,10 +20,10 @@ public class Genero {
     public void setId(long id) {
         this.id = id;
     }
-    public Spring getNome() {
+    public String getNome() {
         return nome;
     }
-    public void setNome(Spring nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
     
